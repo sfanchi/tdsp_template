@@ -12,17 +12,17 @@ Mi objetivo principal mediante este proyecto es poder desarrollar un sistema de 
 
 ### Incluye:
 
-- Usaremos unos datos que contienen las calificaciones (ratings de 0-5) de los productos correspondientes.
+- Usaremos unos datos que contienen las calificaciones (ratings de 0-5) de los productos correspondientes a cada una de las transacciones en un rango de fechas de todo el año 20201 y 2022.
 - Nuestro resultado deberá ser la predicción de los rating de un usuario que definamos pero esa predicción debe darse sobre productos que no haya comsumido y basada en las valoraciones que haya dado previamente.
-- El exito del proyecto se medira si obtenemos un resultado del modelo de Deep Learning (no será algo extensivo en su desarrollo ya que queremos enfocarnos en su estrategia de despliegue) desplegado con una buena estrategia que lo haga de fácil uso y acceso a distintos usuarios.
+- El éxito del proyecto se medirá en términos de que si obtenemos un resultado del modelo de Deep Learning (no será algo extensivo en su desarrollo ya que queremos enfocarnos en su estrategia de despliegue) desplegado con una buena estrategia que lo haga de fácil uso y acceso a distintos usuarios dentro de la misma empresa y que necesiten de su ejecución y sus resutlados finales.
 
 ### Excluye:
 
-- Desarrollos muy avanzados o de un nivel profundo en los temas de Deep Learning (se desarrollará con Tensorflow Recommenders a unas primeras instancias de toda su profunidad)
+- Desarrollos muy avanzados o de un nivel profundo en los temas de Deep Learning (se desarrollará con Tensorflow Recommenders a unas primeras instancias de toda su profunidad), no se harán aspectos como la búsqueda de hiperparametros ni el ajuste de los mismos.
 
 ## Metodología
 
-La metología que usaremos en este proyecto será TDSP:
+La metodología que usaremos en este proyecto será TDSP:
 
 El Proceso de ciencia de datos en equipo (TDSP) es una metodología de ciencia de datos ágil e iterativa que nos permite ofrecer soluciones de análisis predictivo y aplicaciones inteligentes de manera eficiente. TDSP ayuda a mejorar la colaboración y el aprendizaje del equipo al sugerir cómo los roles del equipo funcionan mejor juntos.
 
@@ -42,13 +42,13 @@ El Proceso de ciencia de datos en equipo (TDSP) es una metodología de ciencia d
 
 ## Presupuesto
 
-Al ser un proyecto en fase de iniciación, el presupuesto que se tendra es el necesario en horas hombre para que el responsable lleve a cabo als actividades pertinentes.
+Al ser un proyecto en fase de iniciación, el presupuesto que se tendra es el equivalente a las horas hombre para que el responsable lleve a cabo las actividades pertinentes.
 
 ## Stakeholders
 
 - Diana Sepúlveda - Gerente de la unidad de desarrollo de bienestar social
 - Los entregables se harán directamente a Diana Sepúlveda ya que es al directa encargada de la evaluación e implementación del desarrollo del proyecto al interior de la organización.
-- Se busca un modelo de recomendación que se de fácil acceso y uso para el usuario final.
+- Se busca un modelo de recomendación que sea de fácil acceso y uso para el usuario final (usuario empresarial).
 
 ## Aprobaciones
 
