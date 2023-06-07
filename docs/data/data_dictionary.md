@@ -6,29 +6,10 @@
 
 | Variable | Descripción | Tipo de dato | Rango/Valores posibles | Fuente de datos |
 | --- | --- | --- | --- | --- |
-| variable_1 | Descripción de la variable 1 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
-| variable_2 | Descripción de la variable 2 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
-| variable_3 | Descripción de la variable 3 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
-| variable_4 | Descripción de la variable 4 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
-| variable_5 | Descripción de la variable 5 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
-
-- **Variable**: nombre de la variable.
-- **Descripción**: breve descripción de la variable.
-- **Tipo de dato**: tipo de dato que contiene la variable.
-- **Rango/Valores posibles**: rango o valores que puede tomar la variable.
-- **Fuente de datos**: fuente de los datos de la variable.
-
-## Base de datos 2
-
-**Agregar una descripción de la tabla o fuente de datos.
-
-| Variable | Descripción | Tipo de dato | Rango/Valores posibles | Fuente de datos |
-| --- | --- | --- | --- | --- |
-| variable_1 | Descripción de la variable 1 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
-| variable_2 | Descripción de la variable 2 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
-| variable_3 | Descripción de la variable 3 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
-| variable_4 | Descripción de la variable 4 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
-| variable_5 | Descripción de la variable 5 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
+| ID_CLIENTE | Identificador de cada cliente de nuestra base de datos | Numérico entero | 1 - 2382 | valoraciones_usuarios |
+| FECHA_INTERACCION | Fecha en la que se realiza la transacción | Fecha | Año 2021-2022 | valoraciones_usuarios |
+| NOMBRE_CORTO_DE_EXPERIENCIA | Nombre del producto/servicio | String | Varios | valoraciones_usuarios |
+| CALIFICACION | Calificación otorgada por el usuario | Numérico entero | [1,2,3,4,5] | valoraciones_usuarios |
 
 - **Variable**: nombre de la variable.
 - **Descripción**: breve descripción de la variable.
