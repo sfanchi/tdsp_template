@@ -4,24 +4,30 @@ Este documento contiene los resultados del análisis exploratorio de datos.
 
 ## Resumen general de los datos
 
-En esta sección se presenta un resumen general de los datos. Se describe el número total de observaciones, variables, el tipo de variables, la presencia de valores faltantes y la distribución de las variables.
+En nuestro caso, contamos con 11165 registros en nuestro dataset, cada uno de estos registros hace referencia a una valoración de algún usuario en un momento dado del tiempo, a su vez contamos con 4 columnas, también podemos observar que estas valoraciones estan en una escala de 1 a 5
 
 ## Resumen de calidad de los datos
-
-En esta sección se presenta un resumen de la calidad de los datos. Se describe la cantidad y porcentaje de valores faltantes, valores extremos, errores y duplicados. También se muestran las acciones tomadas para abordar estos problemas.
+En cuanto a la composición de nuestro dataframe, podemos ver que todas las variables son de tipo string excepto la variable de CALIFICACION que es de tipo entero y ID_CLIENTE, a su vez podemos ver también que no tenemos ningún dato faltante:
 
 ## Variable objetivo
 
-En esta sección se describe la variable objetivo. Se muestra la distribución de la variable y se presentan gráficos que permiten entender mejor su comportamiento.
+Nuestro dataframe si tiene una variable que se puede llegar a estimar, es el caso de la CALIFICACION, cuando implementemos el modelo NCF (Neural Collaborative Filtering), su idea principal es llegar a generar predicciones de valoraciones de aquellos usuarios que no han valorado el item, de esta forma llegar a tener una matriz completa de valoraciones con la que pueda trabajar y sacar las similitudes de manera completa de todos los usuarios (Mayor info en el NB de EDA).
 
 ## Variables individuales
 
-En esta sección se presenta un análisis detallado de cada variable individual. Se muestran estadísticas descriptivas, gráficos de distribución y de relación con la variable objetivo (si aplica). Además, se describen posibles transformaciones que se pueden aplicar a la variable.
+Un pequeño resumen de nuestras variables es este:
+
+*Número de Ratings: 11,165
+
+*Columnas: ['ID_CLIENTE' 'FECHA_INTERACCION' 'NOMBRE_CORTO_DE_EXPERIENCIA' 'CALIFICACION']
+
+*Número de Usuarios: 2,382
+
+*Número de Experiencias: 254
+
+De igual forma en el NB de EDA podemos ver un poco mas al detalle de estas variables.
 
 ## Ranking de variables
 
-En esta sección se presenta un ranking de las variables más importantes para predecir la variable objetivo. Se utilizan técnicas como la correlación, el análisis de componentes principales (PCA) o la importancia de las variables en un modelo de aprendizaje automático.
+Para nuestro casa de motor de recomendación, nuestro ranking de variables es bastante claro y buscamos predecir la calificación de todos los usuarios de la matriz sobre todos los productos.
 
-## Relación entre variables explicativas y variable objetivo
-
-En esta sección se presenta un análisis de la relación entre las variables explicativas y la variable objetivo. Se utilizan gráficos como la matriz de correlación y el diagrama de dispersión para entender mejor la relación entre las variables. Además, se pueden utilizar técnicas como la regresión lineal para modelar la relación entre las variables.
