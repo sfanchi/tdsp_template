@@ -1,39 +1,38 @@
 # Reporte del Modelo Baseline
 
-Este documento contiene los resultados del modelo baseline.
+En el modelo baseline podemos ver como el modelo basado en redes neuronales puede predecir los ratings de las valoraciones de peliculas que ciertos usuarios no han visto, esto con el fin de poder recomendar peliculas que les puede lelgar a gustar basado en lo que ya hayan visto previamente esos mismos usuarios.
 
 ## Descripción del modelo
 
-El modelo baseline es el primer modelo construido y se utiliza para establecer una línea base para el rendimiento de los modelos posteriores.
+Este primer modelo se toma como base para ilustrar el funcionamiento de un esuqema recomendador, donde tenemos 2 pilares básicos, que son las valoraciones y los usuarios. A partir de estos dos, se crea la arquitectura de la red neuronal para asi poder predecir toda la matriz de valoraciones de los usuarios.
 
 ## Variables de entrada
 
-Lista de las variables de entrada utilizadas en el modelo.
+Las variables de entrada son las valoraciones de los productos que los usuarios ya han comprado/consumido y también los nombres de los productos o sus respectos identificadores que los usuarios han valorado.
 
 ## Variable objetivo
 
-Nombre de la variable objetivo utilizada en el modelo.
+La variable objetivo para nuestro caso sigue siendo la misma valoración, pero buscamos predecir aquellas que no tenemos.
 
 ## Evaluación del modelo
 
 ### Métricas de evaluación
 
-Descripción de las métricas utilizadas para evaluar el rendimiento del modelo.
+La variable que usamos para medir el rendimiento de nuestro modelo es el RMSE.
 
 ### Resultados de evaluación
 
-Tabla que muestra los resultados de evaluación del modelo baseline, incluyendo las métricas de evaluación.
-
+El RMSE para el caso de el modelo baseline es de 0.251
 ## Análisis de los resultados
 
-Descripción de los resultados del modelo baseline, incluyendo fortalezas y debilidades del modelo.
+El modelo baseline es una buena primera aproximación a las predicciones de las valoraciones, sin embargo, la arquitectura de lar ed neuronal puede ser mas profunda.
 
 ## Conclusiones
 
-Conclusiones generales sobre el rendimiento del modelo baseline y posibles áreas de mejora.
+Como lo mencioné anteriormente, se puede mejorar en la arquitectura de la red neuronal, esto trae su costo de nivel de procesamineto y tiempo pero puede valer la pena para unos mejores resultados.
 
 ## Referencias
 
-Lista de referencias utilizadas para construir el modelo baseline y evaluar su rendimiento.
+https://www.tensorflow.org/recommenders/examples/quickstart?hl=es-419
 
-Espero que te sea útil esta plantilla. Recuerda que puedes adaptarla a las necesidades específicas de tu proyecto.
+
