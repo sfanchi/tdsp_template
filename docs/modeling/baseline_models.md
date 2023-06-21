@@ -22,7 +22,7 @@ La variable que usamos para medir el rendimiento de nuestro modelo es el RMSE.
 
 ### Resultados de evaluación
 
-El RMSE para el caso de el modelo baseline es de 0.251
+El RMSE para el caso de el modelo baseline es de 0.921
 ## Análisis de los resultados
 
 El modelo baseline es una buena primera aproximación a las predicciones de las valoraciones, sin embargo, la arquitectura de lar ed neuronal puede ser mas profunda.
