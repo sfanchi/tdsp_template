@@ -6,27 +6,36 @@ Este informe describe los resultados del proyecto de machine learning y presenta
 
 ## Resultados del proyecto
 
-- Resumen de los entregables y logros alcanzados en cada etapa del proyecto.
-- Evaluación del modelo final y comparación con el modelo base.
-- Descripción de los resultados y su relevancia para el negocio.
+- **Resumen de los entregables y logros alcanzados en cada etapa del proyecto:** A lo largo de este proyecto, mediante de una serie de documentos hemos logrado alcanzar una serie de objetivos:
+  * Ejecutar satisfactoriamente la carga de nuestros datos y proceder a realizar un entendimiento de negocio, el cual nos permitió establecer nuestros objetivos y tener una mayor claridad de la ruta a seguir.
+  * Realizar un análisis exploratorio sobre nuestros datos para tener un mayor manejo y una perspectiva mas clara.
+  * Generar un preprocesamiento exitoso el cual límpie y deje nuestros datos listos para trabajarlos en nuestro modelo recomendador, también definimos nuestros datos lo cual permitió tener como base como serán tratados de ahí en adelante.
+  * Desarrollamos el código de nuestro modelo y a su vez definimos un modelo base bajo el cual sería nuestro punto de comparación, hicimos los respectivos ajustes y definimos nuestro modelo final.
+  * Desplegamos nuestro modelo mediante un CLI el cual nos permite una fácil interacción con el y realiza todo el proceso del modelo de inicio a fín, resultando en un desarrollo de fácil uso para cualquier usuario en la empresa.
+- **Evaluación del modelo final y comparación con el modelo base:** Para la evaluación de nuestro modelo y cuando lo comparamos con el modelo base, para este último tomamos un referente en la industria de los recomendadores, se trata de Tensorflow Recommenders (TFRS) es una libreria de TF especializada y enfocada hacia los sitemas recomendadores. Nos pudímos dar cuenta cuando hicimos ambos modelos, que efectivamente el modelo que planteamos se basaba en un principio en el de TFRS, sin embargo, lo que se le agregó o mejoró fue la capa de 'Ranking' la cual es aquella que nos permite hacer las predicciones con nuestra red neuronal sobre nuestra variable de interés (CALIFICACION). Cabe resaltar que esa capa de 'Ranking' que le definimos a nuestro modelo proviene de esa misma librería, a su vez, TFRS posee una diversidad muy grande de funcionalidades adicionales que incluso pueden seguir mejorando mucho nuestro modelo final.
+- **Descripción de los resultados y su relevancia para el negocio:** Frente a los resultados, hemos obtenido un buen primer modelo, pudimos observar que es un modelo que sus predicciones estan cerca a los valores reales de las calificaciones (lo vimos tanto a nivel de ejemplo de usuario pero tambien extrayendo métricas como lo es el RMSE), como lo hemos dicho previamente este modelo es de igual manera muy sujeto a una mejora contínua y todavía tiene mucho campo sobre el cual desarrollarse y evolucionar.
 
 ## Lecciones aprendidas
 
-- Identificación de los principales desafíos y obstáculos encontrados durante el proyecto.
-- Lecciones aprendidas en relación al manejo de los datos, el modelamiento y la implementación del modelo.
-- Recomendaciones para futuros proyectos de machine learning.
+- **Identificación de los principales desafíos y obstáculos encontrados durante el proyecto:** Uno de los principales desafíos que se encontró en el proyecto, fue definir una arquitectura funcional para la red neuronal, no es muy sencillo cambiar el paradigma que se tiene sobre los algoritmos de los recomendadores más comunes (filtros colaborativos basados en usuarios/item, filtros basados en contenido, etc), lo cual se consideró como un reto, sin embargo, se pudo observar las ventajas y la aplicación de las redes nuronales las cuales tienen un impacto enorme sobre este tipo de aplicaciones.
+  * Otro desafío fue el identificar la forma de despliegue más apropiada para nuestro caso, en un principio se penso en que lo más factible era desarrolar una API mediante FastAPI, sin embargo, dado que se quería algo que sea de fácil interacción y que sea de una ejecución directa sobre el equipo (ya sea servidor o cualquier otra maquina) y no depender de aspectos relacionados a redes ni tampoco a otras aplicaciones o desarrollos que se deben conectar a este, se terminó desarrollado un CLI que sea del estilo pregunta-respuesta y que guíe al usuario en llegar al resultado esperado.  
+- **Lecciones aprendidas en relación al manejo de los datos, el modelamiento y la implementación del modelo.** La lección aprendida más importante para este proyecto en tema de el manejo de los datos, es tomar el tiempo necesario para estar seguros de que los datos que vamos a manipular estan en la mejor forma y en su estado adecuado, con esto nos referimos a tipos de dato, normalización, estandarización, creación de nuevas variables, edición de variables existentes, etc.
+
+Referente al tema del modelamiento, se aprendió de que siempre podemos mejorar nuestros modelos bajo diferentes técnicas, como mejorar los datos de ingreso, cambiar de modelos, aplicar técnicas de tunning y búsqueda de hiperparámetros, entre otros, sin embargo uno muy importante es aplicar los versionamientos que se aprendieron (datos, modelos y codigo) para poder llevar un correcto seguimiento de nuestros experimentos. 
+
+En temas de la implementación, la lección aprendida es que no esta mal cambiar de modalidad de despliegue y es algo que puede ocurrir. Como fue en nuestro caso, tuvimos un cambio de modalidad de despliegue en un último momento, donde decidimos pasar de API a CLI, esto es algo que puede ocurrir en cualquier proyecto, lo importante es seguir con el desarrollo y no dejar que decisiones de este tipo nos impacte de una manera negativa el proyecto
+- **Recomendaciones para futuros proyectos de machine learning:** El machine learning es una disciplina de constante cambio, debemos ser personas que estamos dispuestos a cambiar constantemente, esto debido al cambio y evolución tan rápido que se tiene en temas tecnológicos, el dia de mañana debemos estar dispuestos a cambiar nuestros desarrollos a un mejor algoritmo, mas eficiente, mas preciso, mas rápido, etc, el cual siempre esté alineado con nuestros objetivos, asi como tambien estar constantemente monitoreando nuestros desarrollos y no tengan una desmejoría con el tiempo. Debemos buscar siempre estar al tanto de los últimos desarrollos o tecnologías asi nos parezca en ciertos momentos un tema agoviante.
 
 ## Impacto del proyecto
 
-- Descripción del impacto del modelo en el negocio o en la industria.
-- Identificación de las áreas de mejora y oportunidades de desarrollo futuras.
+- **Descripción del impacto del modelo en el negocio o en la industria:** Este modelo tendrá un impacto positivo a nivel de negocio, ya que actualmente se necesita incorporar nuevas técnicas que ayude a la empresa a mejorar sus estrategias de personalización, es un avance también en temas tecnologicos ya que seria un ingreso de nuevas áreas como lo es el Aprendizaje Profundo, estoy seguro que será de mucha utilidad al negocio ya que esto hasta ahora es un primer paso y una muestra del potencial que se tienen con estos modelos y metologías de despliegue.
+- **Identificación de las áreas de mejora y oportunidades de desarrollo futuras:** Un área que tiene definitva mejora en un futuro es la profundización sobre el Aprendizaje Profundo, poder llegar a generar redes neuronales con una mayor complejidad y que permitan poco a poco mejorar la personalización de cara al usuario final. Otro aspecto de mejora es la metodología de despliegue, en esta ocasión logramos un CLI interactivo llamativo al usuario final, sin duda se pueden desarrollar cosas mas avanzadas y mas robastas también de cara al usuario final.
 
 ## Conclusiones
 
-- Resumen de los resultados y principales logros del proyecto.
-- Conclusiones finales y recomendaciones para futuros proyectos.
+- **Resumen de los resultados y principales logros del proyecto:** Considero que el proyecto tuvo un buen primer despliegue y desarrollo de modelo, vimos que los resultados del modelo segun su RMSE y algunos ejemplos de usuarios no estan nada mal y al final del ejercicio podemos decir que cumplimos con los logros propuestos por el poyecto, sin embargo, como hemos comentado antes, es un desarrollo que aun esta sujeto de muchas mejoras y seguir evolucionandolo es algo que se debe hacer.
+- **Conclusiones finales y recomendaciones para futuros proyectos:** Fue un proyecto muy interesante de desarrollar, se aprendieron muchas cosas nuevas, se tuvieron tambien percances que nos dejaron lecciones aprendidas, pero en general, se disfrutó el hacer este proyecto, es un escenario que nos deja un espacio muy grande para seguir investigando y aprendiendo cada vez más. Como recomendación se espera seguir haciendo mucho énfasis en el desarrollo avanzado sobre distintos modelos de Machine Learning y aprender mas de su diversidad, para que así, en futuros proyectos podamos tener una caja de herramientas mucho mas completa y robusta.
 
 ## Agradecimientos
 
-- Agradecimientos al equipo de trabajo y a los colaboradores que hicieron posible este proyecto.
-- Agradecimientos especiales a los patrocinadores y financiadores del proyecto.
+- **Agradecimientos al equipo de trabajo y a los colaboradores que hicieron posible este proyecto:** Gracias a la Universidad Nacional por brindar los conocimientos necesarios para llevar este proyecto a cabo.
